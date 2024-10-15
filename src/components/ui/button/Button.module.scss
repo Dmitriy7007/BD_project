@@ -1,0 +1,57 @@
+.button {
+  &.l {
+    @apply py-[13px];
+  }
+
+  &.m {
+    @apply py-[10px];
+  }
+
+  &.s {
+    @apply py-[7px];
+  }
+
+  &.primary {
+    @apply bg-mainBlue;
+
+    &:hover,
+    &:active {
+      @apply bg-blueHover;
+    }
+  }
+
+  &.outline {
+    @apply border-[1px] border-mainBlue bg-white text-mainBlue;
+
+    &:hover,
+    &:active {
+      @apply border-blueHover text-blueHover;
+    }
+  }
+
+  &.vacuum {
+    @apply bg-white text-mainBlue;
+
+    &:hover,
+    &:active {
+      @apply bg-lightBlue;
+    }
+  }
+
+  &.isDisabled {
+    @apply bg-greyBg text-greyText cursor-not-allowed;
+    &:hover,
+    &:active {
+      @apply bg-greyBg text-greyText;
+    }
+  }
+
+  &.green {
+    @apply bg-green;
+
+    &:hover,
+    &:active {
+      @apply bg-greenHover;
+    }
+  }
+}

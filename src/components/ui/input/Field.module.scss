@@ -1,0 +1,11 @@
+.input-field {
+  @apply w-full px-[16px] py-[15px] border border-greyStroke rounded-[12px]  bg-transparent text-greyText transition-colors focus:outline-none hover:border-greyText relative;
+}
+
+.label-field {
+  @apply text-[13px] font-medium relative;
+}
+
+.icon {
+  @apply absolute text-greyStroke top-8 right-0;
+}
