@@ -1,14 +1,16 @@
 .button {
+  @apply border-[1px] border-transparent;
+
   &.l {
-    @apply py-[13px];
+    @apply py-[12px];
   }
 
   &.m {
-    @apply py-[10px];
+    @apply py-[9px];
   }
 
   &.s {
-    @apply py-[7px];
+    @apply py-[6px];
   }
 
   &.primary {
@@ -38,14 +40,6 @@
     }
   }
 
-  &.isDisabled {
-    @apply bg-greyBg text-greyText cursor-not-allowed;
-    &:hover,
-    &:active {
-      @apply bg-greyBg text-greyText;
-    }
-  }
-
   &.green {
     @apply bg-green;
 
@@ -53,5 +47,20 @@
     &:active {
       @apply bg-greenHover;
     }
+  }
+
+  &.red {
+    @apply bg-error;
+  }
+
+  &.isDisabled {
+    @apply bg-greyBg text-greyText cursor-not-allowed;
+    &:hover,
+    &:active {
+      @apply bg-greyBg text-greyText;
+    }
+  }
+  &.isDisabled > svg {
+    @apply text-greyStroke;
   }
 }

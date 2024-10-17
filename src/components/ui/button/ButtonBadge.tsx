@@ -1,11 +1,11 @@
 import cn from 'clsx'
 import type { HTMLAttributes } from 'react'
 
-interface IBadge extends HTMLAttributes<HTMLDivElement> {
+interface IButtonBadge extends HTMLAttributes<HTMLDivElement> {
   value: number
 }
 
-export const Badge = ({ value, className, ...rest }: IBadge) => {
+export const ButtonBadge = ({ value, className, ...rest }: IButtonBadge) => {
   return (
     <div
       className={cn(

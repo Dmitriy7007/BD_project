@@ -1,64 +1,197 @@
 import { Counter } from './components/Counter'
-import { Badge } from './components/ui/Badge'
 import { Button } from './components/ui/button/Button'
 import { Field } from './components/ui/input/Field'
 function App() {
   return (
     <>
-      <Badge value={2} />
-
       <Counter />
 
+      <div className='flex'>
+        <Button>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button>Кнопка</Button>
+
+        <Button>
+          <Button.Icon value='check' />
+        </Button>
+
+        <Button isDisabled>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button isDisabled>Кнопка</Button>
+
+        <Button isDisabled>
+          <Button.Icon value='check' />
+        </Button>
+
+        <Button appearance='outline'>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button appearance='outline'>Кнопка</Button>
+
+        <Button appearance='outline'>
+          <Button.Icon value='check' />
+        </Button>
+
+        <Button appearance='outline' isDisabled>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button appearance='outline' isDisabled>
+          Кнопка
+        </Button>
+
+        <Button appearance='outline' isDisabled>
+          <Button.Icon value='check' />
+        </Button>
+
+        <Button appearance='vacuum'>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button appearance='vacuum'>Кнопка</Button>
+
+        <Button appearance='vacuum'>
+          <Button.Icon value='check' />
+        </Button>
+      </div>
+
+      <br />
+
+      <div className='flex'>
+        <Button size='m'>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button size='m'>Кнопка</Button>
+
+        <Button size='m'>
+          <Button.Icon value='check' />
+        </Button>
+
+        <Button isDisabled size='m'>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button isDisabled size='m'>
+          Кнопка
+        </Button>
+
+        <Button isDisabled size='m'>
+          <Button.Icon value='check' />
+        </Button>
+
+        <Button appearance='outline' size='m'>
+          <Button.Icon value='plus' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button appearance='outline' size='m'>
+          Кнопка
+        </Button>
+
+        <Button appearance='outline' size='m'>
+          <Button.Icon value='check' />
+        </Button>
+
+        <Button appearance='outline' isDisabled size='m'>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button appearance='outline' isDisabled size='m'>
+          Кнопка
+        </Button>
+
+        <Button appearance='outline' isDisabled size='m'>
+          <Button.Icon value='check' />
+        </Button>
+
+        <Button appearance='vacuum' size='m'>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button appearance='vacuum' size='m'>
+          Кнопка
+        </Button>
+
+        <Button appearance='vacuum' size='m'>
+          <Button.Icon value='check' />
+        </Button>
+
+        <Button appearance='vacuum' size='m'>
+          Кнопка
+          <Button.Badge value={3} className='ml-2' />
+        </Button>
+      </div>
+
+      <br />
+
+      <div className='flex'>
+        <Button size='s'>
+          <Button.Icon value='check' className='mr-2' />
+          Кнопка
+        </Button>
+
+        <Button size='s'>Кнопка</Button>
+      </div>
+
       <div className='flex items-center'>
-        <Button size='l'>Кнопка</Button>
-        <Button size='l' isCheck>
-          Кнопка
+        <Button appearance='green' size='l'>
+          <Button.Icon value='check' />
         </Button>
-        <Button size='l' isNotChild isCheck></Button>
-        <Button size='l' isDisabled>
-          Кнопка
-        </Button>
-        <Button size='l' isCheck isDisabled>
-          Кнопка
-        </Button>
-        <Button size='l' isNotChild isCheck isDisabled></Button>
-        <Button size='l' isNotChild isCheck appearance='green'></Button>
-        <Button size='l' isNotChild isSettings appearance='outline'></Button>
-        <Button size='m' isNotChild isSettings appearance='outline'></Button>
-        <Button size='s' isNotChild isSettings appearance='outline'></Button>
-      </div>
 
-      <Button size='m'>Кнопка</Button>
-      <Button size='s'>Кнопка</Button>
-      <Button size='s' isCheck>
-        Кнопка
-      </Button>
-      <Button size='s' withBadge appearance='outline'>
-        Кнопка
-      </Button>
-      <Button size='s' isNotChild isSettings appearance='outline'></Button>
+        <Button appearance='green' size='m'>
+          <Button.Icon value='check' />
+        </Button>
 
-      <div className='flex'>
-        <Button size='l' appearance='outline'>
-          Кнопка
-        </Button>
-        <Button size='l' isCheck appearance='outline'>
-          Кнопка
-        </Button>
-        <Button size='l' isNotChild isCheck appearance='outline'></Button>
-        <Button size='l' isCheck appearance='outline' isDisabled>
-          Кнопка
+        <Button appearance='green' size='s'>
+          <Button.Icon value='check' />
         </Button>
       </div>
 
-      <div className='flex'>
-        <Button size='l' appearance='vacuum'>
-          Кнопка
+      <div className='flex items-center'>
+        <Button appearance='outline' size='l'>
+          <Button.Icon value='settings' />
         </Button>
-        <Button size='l' isCheck appearance='vacuum'>
-          Кнопка
+
+        <Button appearance='outline' size='m'>
+          <Button.Icon value='settings' />
         </Button>
-        <Button size='l' isNotChild isCheck appearance='vacuum'></Button>
+
+        <Button appearance='outline' size='s'>
+          <Button.Icon value='settings' />
+        </Button>
+
+        <Button appearance='outline' size='s' isDisabled>
+          <Button.Icon value='settings' />
+        </Button>
+      </div>
+
+      <div className='flex items-center'>
+        <Button appearance='red' size='l'>
+          <Button.Icon value='close' />
+        </Button>
+
+        <Button appearance='red' size='m'>
+          <Button.Icon value='close' />
+        </Button>
+
+        <Button appearance='red' size='s'>
+          <Button.Icon value='close' />
+        </Button>
       </div>
 
       <Field label='Адрес электронной почты' />
